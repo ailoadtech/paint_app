@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+drawable app
+drawable black
+drawable clear
+drawable color
+drawable rainbow
+drawable save
+drawable size
+drawable stamp1
+drawable stamp2
+drawable stamp3
+drawable stamp4
+drawable stamp5
+drawable stamp6
+drawable stamp7
+id btnClear
+id btnColor
+id btnRainbow
+id btnSave
+id btnSize
+id btnStamp
+id drawingView
+layout activity_main
+string app_name

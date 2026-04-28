@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.paintapp.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#000000">
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/clear"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Clear"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnColor"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/color"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Color"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnSize"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/size"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Pen Size"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnRainbow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/rainbow"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Rainbow"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnStamp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/black"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Stamp"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/save"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="centerInside"
+            android:contentDescription="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>

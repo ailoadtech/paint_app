@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp7.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp7.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/layout_activity_main.xml.flat",
+        "source": "com.example.paintapp-main-29:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_rainbow.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/rainbow.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_clear.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/clear.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_app.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/app.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp6.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp6.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp1.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp1.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_save.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/save.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_color.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/color.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp3.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp3.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_black.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/black.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp2.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp2.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_size.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/size.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp5.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp5.png"
+    },
+    {
+        "merged": "com.example.paintapp-merged_res-27:/drawable_stamp4.png.flat",
+        "source": "com.example.paintapp-main-29:/drawable/stamp4.png"
+    }
+]
