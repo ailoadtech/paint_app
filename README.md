@@ -5,8 +5,8 @@ So i did a rebuild of the app and added some extra stamping feature liked by kid
 
 ## Screenshots
 
-![App Screenshot](screenshot1.jpg)
-![App Screenshot](screenshot2.jpg)
+![App Screenshot](screenshot1.png)
+![App Screenshot](screenshot2.png)
 
 ## Features
 
