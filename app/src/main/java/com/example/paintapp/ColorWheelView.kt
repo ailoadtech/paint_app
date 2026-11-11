@@ -107,11 +107,18 @@ class ColorWheelView @JvmOverloads constructor(
 
     private fun drawCenterCircle(canvas: Canvas) {
         val r = radius * 0.18f
+        val oval = RectF(centerX - r, centerY - r, centerX + r, centerY + r)
         Paint().apply {
             isAntiAlias = true
             color = Color.WHITE
             style = Paint.Style.FILL
-            canvas.drawCircle(centerX, centerY, r, this)
+            canvas.drawArc(oval, 90f, 180f, true, this)
+        }
+        Paint().apply {
+            isAntiAlias = true
+            color = Color.BLACK
+            style = Paint.Style.FILL
+            canvas.drawArc(oval, 270f, 180f, true, this)
         }
         Paint().apply {
             isAntiAlias = true
@@ -119,6 +126,7 @@ class ColorWheelView @JvmOverloads constructor(
             style = Paint.Style.STROKE
             strokeWidth = 2f
             canvas.drawCircle(centerX, centerY, r, this)
+            canvas.drawLine(centerX, centerY - r, centerX, centerY + r, this)
         }
     }
 
@@ -129,7 +137,19 @@ class ColorWheelView @JvmOverloads constructor(
         val dy = y - centerY
         val dist = Math.sqrt((dx * dx + dy * dy).toDouble()).toFloat()
 
-        if (dist <= radius && dist > radius * 0.05f) {
+        val innerR = radius * 0.18f
+        if (dist <= innerR) {
+            // Center circle: left half = white, right half = black
+            val color = if (dx < 0) Color.WHITE else Color.BLACK
+            markerX = x
+            markerY = y
+            showMarker = true
+            invalidate()
+            colorSelectedListener?.invoke(color)
+            return true
+        }
+
+        if (dist <= radius) {
             // 0 deg CW from top (0° = top)
             var a = (Math.toDegrees(Math.atan2(dy.toDouble(), dx.toDouble())) + 90) % 360
             if (a < 0) a += 360
